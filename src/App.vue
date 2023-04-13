@@ -6,7 +6,9 @@
 <template>
 
 <header>
-fumetti
+<div class="logo">
+  <img width="90" src="./assets/img/dc-logo.png" alt="">
+</div>
 </header>
 <main>
 
