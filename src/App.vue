@@ -2,63 +2,71 @@
 import AppHeader from "./components/AppHeader.vue"
 import AppMain from "./components/AppMain.vue"
 import AppFooter from "./components/AppFooter.vue"
+import AppBanner from "./components/AppBanner.vue"
 export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    AppBanner
   }
 }
 </script>
 
 <template>
+  <!--   <AppMain></AppMain>
+    <AppHeader></AppHeader>
+    <AppFooter></AppFooter> -->
+
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="logo">
-          <img width="20" src="../src/assets/img/dc-logo.png" alt="">
-        </div>
-        <div class="nav">
-          <ul class="d-flex">
-            <li>ciao</li>
-            <li>ciao</li>
-            <li>ciao</li>
-            <li>ciao</li>
-            <li>ciao</li>
-            <li>ciao</li>
-            <li>ciao</li>
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img width="50" src="./assets/img/dc-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Main_nav">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-current="page">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-current="page">Comics</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
   <main>
-    <section class="content">
-      <div class="container">
-        <h1>Your content here</h1>
-      </div>
-    </section>
-    <section class="jumbutron">
-      <div class="container">
-        <div class="row">
-          <div class="col p-5">
-            <img width="30" class="img-fluid" src="../src/assets/img/buy-comics-digital-comics.png" alt="">
-          </div>
-          <div class="col p-5">
-            <img width="30" class="img-fluid" src="../src/assets/img/buy-comics-merchandise.png" alt="">
-          </div>
-          <div class="col p-5">
-            <img width="30" class="img-fluid" src="../src/assets/img/buy-comics-subscriptions.png" alt="">
-          </div>
-          <div class="col p-5">
-            <img width="30" class="img-fluid" src="../src/assets/img/buy-comics-shop-locator.png" alt="">
-          </div>
-          <div class="col p-5">
-            <img width="30" class="img-fluid" src="../src/assets/img/buy-dc-power-visa.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img height="60px" src="./assets/img/buy-comics-digital-comics.png" alt="">
+      <span>Digital Comics</span>
+    </div>
+    <div class="col">
+      <img height="60px" src="./assets/img/buy-comics-digital-comics.png" alt="">
+      <span>Digital Comics</span>
+    </div>
+    <div class="col">
+      <img height="60px" src="./assets/img/buy-comics-digital-comics.png" alt="">
+      <span>Digital Comics</span>
+    </div>
+    <div class="col">
+      <img height="60px" src="./assets/img/buy-comics-digital-comics.png" alt="">
+      <span>Digital Comics</span>
+    </div>
+    <div class="col">
+      <img height="60px" src="./assets/img/buy-comics-digital-comics.png" alt="">
+      <span>Digital Comics</span>
+    </div>
+  </div>
+</div>
   </main>
   <footer>
     <div class="footer_top">
@@ -70,4 +78,5 @@ export default {
   </footer>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
