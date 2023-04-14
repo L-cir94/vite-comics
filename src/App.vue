@@ -54,7 +54,7 @@ export default {
             <img width="30" class="img-fluid" src="../src/assets/img/buy-comics-shop-locator.png" alt="">
           </div>
           <div class="col p-5">
-            <img width="40" class="img-fluid" src="../src/assets/img/buy-dc-power-visa.svg" alt="">
+            <img width="30" class="img-fluid" src="../src/assets/img/buy-dc-power-visa.svg" alt="">
           </div>
         </div>
       </div>
