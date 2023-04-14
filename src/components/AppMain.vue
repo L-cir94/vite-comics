@@ -38,19 +38,20 @@ export default {
 </script>
 <template>
     <main>
+        <div class="container">
+            your content here
+        </div>
         <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col d-flex align-items-center" v-for="item in banner">
+                    <div class="col d-flex align-items-center p-5 " v-for="item in banner">
                         <img height="60" :src="getImageUrl(item.src)" alt="">
-                        <span>{{ item.text }}</span>
+                        <span class="ms-3">{{ item.text }}</span>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </template>
-
-
-
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/partials/variables' as*;</style>
