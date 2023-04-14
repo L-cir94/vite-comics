@@ -23,7 +23,11 @@ img{
     max-width: 100%;
 }
 main{
-    width: 100%;
-    height: 200px;
     background-color: $darker;
+    color: white;
+    .banner{
+        height: 150px;
+        width: 100%;
+        background-color: $banner;
+    }
 }
