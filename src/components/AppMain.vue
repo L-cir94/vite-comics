@@ -120,11 +120,11 @@ export default {
         </div>
         <section class="comics">
             <div class="container">
-                <h4 class="p-3">Current series</h4>
+                <h4 class="p-3 text-uppercase">Current series</h4>
                 <div class="row">
                     <div class="col-2" v-for="comic in comics">
                         <div class="comic">
-                            <img width="200" height="200" :class="img - fluid" :src="comic.thumb" :alt="comic.series">
+                            <img  :class="img - fluid" :src="comic.thumb" :alt="comic.series">
                             <h6 class="text-uppercase mt-2">{{ comic.series }}</h6>
                         </div>
                     </div>
@@ -169,6 +169,9 @@ export default {
         border: solid $primary;
         color: white;
         padding: 0 2rem;
+    }
+    img{
+        aspect-ratio: 1;
     }
 }
 </style>
