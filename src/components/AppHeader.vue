@@ -1,63 +1,63 @@
 <script>
 export default {
-    name: "AppHeader",
-    data() {
-        return {
-            menu: [
-                {
-                    text: 'Characters',
-                    href: '#',
-                    activePage: true
-                },
-                {
-                    text: 'Comics',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'Movies',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'TV',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'Games',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'Videos',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'Fans',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'News',
-                    href: '#',
-                    activePage: false
-                },
-                {
-                    text: 'Shop',
-                    href: '#',
-                    activePage: false
-                },
+  name: "AppHeader",
+  data() {
+    return {
+      menu: [
+        {
+          text: 'Characters',
+          href: '#',
+          activePage: true
+        },
+        {
+          text: 'Comics',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'Movies',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'TV',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'Games',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'Videos',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'Fans',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'News',
+          href: '#',
+          activePage: false
+        },
+        {
+          text: 'Shop',
+          href: '#',
+          activePage: false
+        },
 
-            ]
-        }
+      ]
     }
+  }
 }
 </script>
 
 <template>
-    <header>
+  <header>
     <nav class="navbar navbar-expand-xxl navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -69,9 +69,9 @@ export default {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="Main_nav">
-          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-            <li class="nav-item" v-for="item in menu ">
-              <a class="nav-link" :href="item.href" aria-current="page">{{item.text}}</a>
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0 gap-4 text-uppercase">
+            <li class="nav-item " v-for="item in menu ">
+              <a class="nav-link " :href="item.href" aria-current="page">{{ item.text }}</a>
             </li>
           </ul>
         </div>
@@ -82,5 +82,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/partials/variables' as*;
+.nav-link{
 
+
+margin-bottom: -0.4rem;
+}
+.nav-link:hover{
+border-bottom: solid 3px $primary;
+}
 </style>

@@ -59,43 +59,43 @@ export default {
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg/revision/latest?cb=20080809201655",
+                    "thumb":"src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$2.99",
                     "series": "Batman Beyond",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg/revision/latest/scale-to-width-down/1200?cb=20130627211607",
+                    "thumb": "src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$3.99",
                     "series": "Batman/Superman",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg/revision/latest?cb=20200929145132",
+                    "thumb": "src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$4.99",
                     "series": "Batman/Superman Annual",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/54/Batman_The_Joker_War_Zone_Vol_1_1.jpg/revision/latest?cb=20200929124651",
+                    "thumb": "src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$5.99",
                     "series": "Batman: The Joker War Zone",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg/revision/latest?cb=20201123054610",
+                    "thumb": "src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$6.99",
                     "series": "Batman: Three Jokers",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Batman_White_Knight_Presents_Harley_Quinn_Vol_1_1.jpg/revision/latest?cb=20201124094800",
+                    "thumb": "src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$4.99",
                     "series": "Batman: White Knight Presents: Harley Quinn",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg/revision/latest?cb=20160303223223",
+                    "thumb": "src/assets/img/Catwoman_Vol_2_1.webp",
                     "price": "$16.99",
                     "series": "Catwoman",
                     "type": "graphic novel"
@@ -124,10 +124,13 @@ export default {
                 <div class="row">
                     <div class="col-2" v-for="comic in comics">
                         <div class="comic">
-                          <img width="200" height="200" :class="img-fluid" :src="comic.thumb" :alt="comic.series">
-                        <h6 class="text-uppercase">{{ comic.series }}</h6>
+                            <img width="200" height="200" :class="img - fluid" :src="comic.thumb" :alt="comic.series">
+                            <h6 class="text-uppercase mt-2">{{ comic.series }}</h6>
                         </div>
                     </div>
+                </div>
+                <div class="col offset-5">
+                    <button class="text-uppercase mb-3 ms-3">Load more</button>
                 </div>
             </div>
         </section>
@@ -152,13 +155,20 @@ export default {
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;
 }
-.comics{
-    h4 {
-display: inline-block;
-background-color: $primary;
-margin-top: -3rem;
-margin-bottom: 3rem;
-}
-}
 
+.comics {
+    h4 {
+        display: inline-block;
+        background-color: $primary;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+    }
+
+    button {
+        background-color: $primary;
+        border: solid $primary;
+        color: white;
+        padding: 0 2rem;
+    }
+}
 </style>
