@@ -49,39 +49,11 @@ export default {
           <div class="col-2">
             <ul>
               <h4>Sites</h4>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
-              <li>
-                <a href="#">lista footer</a>
-              </li>
+              <li><a href="#">DC</a></li>
+              <li><a href="#">MAD Magazine</a></li>
+              <li><a href="#">DC Kids</a></li>
+              <li><a href="#">DC Universe</a></li>
+              <li><a href="#">DC Power Visa</a></li>
             </ul>
           </div>
         </div>
@@ -140,10 +112,22 @@ a {
   h4 {
     color: $primary;
   }
-  button{
+
+  button {
     background-color: $darker;
     border: solid $primary;
     color: white;
   }
+
+  height: 100px;
+  background-color: $darker;
+  z-index: 2;
+}
+.footer_top{
+height: 300px;
+background-color: $darker;
+background-image:url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg) ;
+background-repeat:no-repeat, repeat-x ;
+background-position: 80%, 50%;
 }
 </style>
