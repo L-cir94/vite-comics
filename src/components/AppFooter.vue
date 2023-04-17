@@ -123,11 +123,16 @@ a {
   background-color: $darker;
   z-index: 2;
 }
-.footer_top{
-height: 300px;
-background-color: $darker;
-background-image:url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg) ;
-background-repeat:no-repeat, repeat-x ;
-background-position: 80%, 50%;
+
+.footer_top {
+  height: 300px;
+  background-color: $darker;
+  background-image: url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-position: 80%, 50%;
+
+  h4 {
+    text-transform: uppercase;
+  }
 }
 </style>
