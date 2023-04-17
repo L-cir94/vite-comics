@@ -113,11 +113,7 @@ export default {
 </script>
 <template>
     <main>
-        <div class="container-fluid">
-            <div class="jumbotron">
-
-            </div>
-        </div>
+        
         <section class="comics">
             <div class="container">
                 <h4 class="p-3 text-uppercase">Current series</h4>
@@ -150,11 +146,6 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/partials/variables' as*;
 
-.jumbotron {
-    height: 400px;
-    background-image: url(../assets/img/jumbotron.jpg);
-    background-size: cover;
-}
 
 .comics {
     h4 {
