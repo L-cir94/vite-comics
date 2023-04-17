@@ -11,19 +11,19 @@ export default {
                     src: 'buy-comics-digital-comics.png'
                 },
                 {
-                    text: 'Digital Comics',
+                    text: 'DC Merchandise',
                     src: 'buy-comics-merchandise.png'
                 },
                 {
-                    text: 'Digital Comics',
+                    text: 'Subscription',
                     src: 'buy-comics-subscriptions.png'
                 },
                 {
-                    text: 'Digital Comics',
+                    text: 'comic shop locator',
                     src: 'buy-comics-shop-locator.png'
                 },
                 {
-                    text: 'Digital Comics',
+                    text: 'dc power Visa',
                     src: 'buy-dc-power-visa.svg'
                 },
             ],
@@ -120,12 +120,12 @@ export default {
         </div>
         <section class="comics">
             <div class="container">
+                <h4 class="p-3">Current series</h4>
                 <div class="row">
-                    <h4>Current series</h4>
                     <div class="col-2" v-for="comic in comics">
                         <div class="comic">
-                          <img class="" :src="comic.thumb" alt="comic.series">
-                        <h5>{{ comic.series }}</h5>
+                          <img width="200" height="200" :class="img-fluid" :src="comic.thumb" :alt="comic.series">
+                        <h6 class="text-uppercase">{{ comic.series }}</h6>
                         </div>
                     </div>
                 </div>
@@ -136,8 +136,8 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col d-flex align-items-center p-5 " v-for="item in banner">
-                        <img height="60" :src="getImageUrl(item.src)" alt="">
-                        <span class="ms-3">{{ item.text }}</span>
+                        <img height="60" :src="getImageUrl(item.src)" :alt="item.text">
+                        <span class="ms-3 text-uppercase">{{ item.text }}</span>
                     </div>
                 </div>
             </div>
@@ -152,9 +152,13 @@ export default {
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;
 }
-
-h3 {
-    background-color: $primary;
-    margin-top: -20px;
+.comics{
+    h4 {
+display: inline-block;
+background-color: $primary;
+margin-top: -3rem;
+margin-bottom: 3rem;
 }
+}
+
 </style>
