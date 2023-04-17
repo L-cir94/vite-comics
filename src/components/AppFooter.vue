@@ -12,10 +12,10 @@ export default {
   <footer>
     <div class="footer_top">
       <div class="container">
-        <div class="row pt-3">
+        <div class="row pt-4 ">
           <div class="col-2">
-            <h4>Dc Comics</h4>
             <ul>
+              <h4>Dc Comics</h4>
               <li><a href="#">Characters</a></li>
               <li><a href="#">Comics</a></li>
               <li><a href="#">Movies</a></li>
@@ -24,15 +24,15 @@ export default {
               <li><a href="#">Videos</a></li>
               <li><a href="#">News</a></li>
             </ul>
-            <h4>Shop</h4>
             <ul>
+              <h4>Shop</h4>
               <li><a href="#">Shop DC</a></li>
               <li><a href="#">Shop DC Collectibles</a></li>
             </ul>
           </div>
           <div class="col-2">
-            <h4>Dc</h4>
             <ul>
+              <h4>Dc</h4>
               <li><a href="#">Terms Of Use</a></li>
               <li><a href="#">Privacy policy (New)</a></li>
               <li><a href="#">Ad Choices</a></li>
@@ -47,8 +47,8 @@ export default {
             </ul>
           </div>
           <div class="col-2">
-            <h4>Dc Comics</h4>
             <ul>
+              <h4>Sites</h4>
               <li>
                 <a href="#">lista footer</a>
               </li>
@@ -88,39 +88,39 @@ export default {
       </div>
     </div>
     <div class="footer_bottom">
-        <div class="container d-flex justify-content-between align-items-center p-3">
-          <button class="p-2">SIGN-UP NOW!</button>
-          <div class="d-flex align-items-center">
-            <h4 class="m-0 me-5">Follow us</h4>
-            <ul class="d-flex align-items-center gap-2">
-              <li>
-                <a href="#">
-                  <img src="./../assets/img/footer-facebook.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./../assets/img/footer-twitter.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./../assets/img/footer-youtube.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./../assets/img/footer-pinterest.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./../assets/img/footer-periscope.png" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="container d-flex justify-content-between align-items-baseline pt-4">
+        <button class="p-2">SIGN-UP NOW!</button>
+        <div class="d-flex align-items-baseline">
+          <h4 class="m-0">Follow us</h4>
+          <ul class="d-flex gap-2">
+            <li>
+              <a href="#">
+                <img src="./../assets/img/footer-facebook.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./../assets/img/footer-twitter.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./../assets/img/footer-youtube.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./../assets/img/footer-pinterest.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./../assets/img/footer-periscope.png" alt="">
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -136,4 +136,14 @@ a {
   text-decoration: none;
 }
 
+.footer_bottom {
+  h4 {
+    color: $primary;
+  }
+  button{
+    background-color: $darker;
+    border: solid $primary;
+    color: white;
+  }
+}
 </style>
