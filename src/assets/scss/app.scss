@@ -8,8 +8,7 @@
 footer{
     width: 100%;
     height: auto;
-    position: fixed;
-    bottom: 0;
+
     color: white;
     font-size: 10px;
 }
@@ -30,6 +29,7 @@ img{
 main{
     background-color: $darker;
     color: white;
+    height: 600px;
     height: auto;
     .banner{
         width: 100%;

@@ -2,6 +2,7 @@
 export default {
 
     name: "AppMain",
+
     data() {
         return {
             banner: [
@@ -28,19 +29,22 @@ export default {
             ]
         }
     },
-        methods:{
-            getImageUrl(name){
-                return new URL(`../assets/img/${name}`, import.meta.url).href
-            }
+    methods: {
+        getImageUrl(name) {
+            return new URL(`../assets/img/${name}`, import.meta.url).href
         }
+    }
 }
 
 </script>
 <template>
     <main>
-        <div class="container">
-            your content here
+        <div class="container-fluid">
+            <div class="jumbotron">
+
+            </div>
         </div>
+        
         <div class="banner">
             <div class="container">
                 <div class="row">
@@ -54,4 +58,11 @@ export default {
     </main>
 </template>
 <style lang="scss" scoped>
-@use '../assets/partials/variables' as*;</style>
+@use '../assets/partials/variables' as*;
+
+.jumbotron {
+height: 400px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+}
+</style>
