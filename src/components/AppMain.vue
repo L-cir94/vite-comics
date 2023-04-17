@@ -138,7 +138,7 @@ export default {
         <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col d-flex align-items-center p-5 " v-for="item in banner">
+                    <div class="col d-flex align-items-center p-2 pt-5 pb-5 " v-for="item in banner">
                         <img height="60" :src="getImageUrl(item.src)" :alt="item.text">
                         <span class="ms-3 text-uppercase">{{ item.text }}</span>
                     </div>
